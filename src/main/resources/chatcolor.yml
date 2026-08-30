@@ -1,0 +1,77 @@
+# ==========================================
+#     CHATCOLOR SYSTEM CONFIG
+# ==========================================
+
+# ChatColor System
+chatcolor:
+  enabled: true
+
+  # Default Farbe (wenn Spieler keine hat)
+  default-color: "&f"
+
+  # Nachricht beim Setzen
+  color-set: "&aDeine Chat-Farbe wurde gesetzt: {preview}"
+  color-reset: "&cDeine Chat-Farbe wurde zurückgesetzt."
+
+  # Tutorial (wird angezeigt bei /chatcolor ohne Argumente)
+  tutorial:
+    - ""
+    - "&7&m--------------------&r &eChatColor Tutorial &7&m--------------------"
+    - ""
+    - "&e&lEinfache Farben:"
+    - "&7  /chatcolor &c&c &7- Rote Farbe"
+    - "&7  /chatcolor &b&b &7- Aqua Farbe"
+    - "&7  /chatcolor &e&e &7- Gelbe Farbe"
+    - ""
+    - "&e&lHex-Farben:"
+    - "&7  /chatcolor #FF0000 &7- Rot (Hex)"
+    - "&7  /chatcolor #00D4FF &7- Blau (Hex)"
+    - ""
+    - "&e&lGradient-Farben:"
+    - "&7  /chatcolor #FF0000 #FFAA00 &7- Rot zu Orange"
+    - "&7  /chatcolor #00AAFF #AA00FF &7- Blau zu Lila"
+    - ""
+    - "&7  /chatcolor reset &7- Farbe zurücksetzen"
+    - ""
+    - "&7&m-------------------------------------------------------"
+    - ""
+
+# ChatStop System
+chatstop:
+  enabled: true
+  # Nachricht wenn Chat gestoppt ist
+  message: "&cDer Chat ist momentan deaktiviert."
+  # Nachricht beim Aktivieren
+  enabled-message: "&aChat wurde aktiviert."
+  # Nachricht beim Deaktivieren
+  disabled-message: "&cChat wurde deaktiviert."
+  # Nachricht mit Timer
+  timer-message: "&cChat wurde für &f{time} &cdeaktiviert."
+  # Permission zum Bypass
+  bypass-permission: "zmsg.chatstop.bypass"
+
+# ChatClear
+chatclear:
+  enabled: true
+  # Anzahl leerer Zeilen
+  lines: 100
+  # Nachricht nach Clear
+  message: "&aDer Chat wurde geleert von &f{player}"
+  # Nachricht an Ausführenden
+  sender-message: "&aDu hast den Chat geleert."
+
+# Chat Spacing System
+spacing:
+  enabled: true
+  # Permission: zmsg.chat.spacing
+  permission: "zmsg.chat.spacing"
+  # Anzahl Leerzeilen vor der Nachricht
+  lines: 1
+
+# Messages
+messages:
+  no-permission: "&cKeine Berechtigung."
+  chatcolor-usage: "&cBenutzung: /chatcolor [farbe] oder /chatcolor [start] [ende]"
+  chatstop-usage: "&cBenutzung: /chatstop [Zeit] (z.B. 1m, 30s, 1h)"
+  invalid-time: "&cUngültige Zeitangabe! Nutze: s (Sekunden), m (Minuten), h (Stunden), d (Tage)"
+  invalid-color: "&cUngültige Farbe! Nutze &c, #FF0000 oder Gradient."

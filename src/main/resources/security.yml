@@ -1,0 +1,46 @@
+enabled: true
+
+# Spieler mit dieser Permission werden nicht gefiltert.
+bypass-permission: "zmsg.security.bypass"
+
+# Wo der Security-Filter aktiv sein soll.
+types:
+  chat: true
+  msg: true
+  sign: true
+  anvil: true
+
+# Nachricht im normalen Chat. "messege" wird ebenfalls unterstuetzt.
+chat:
+  enabled: false
+  message:
+    - ""
+    - ""
+
+# Nachricht in der Actionbar. "autionbar" aus alten Configs wird nicht benoetigt.
+actionbar:
+  enabled: true
+  message:
+    - "&cDieses Wort ist nicht erlaubt"
+    - ""
+
+sound:
+  enabled: true
+  sound: "ENTITY_VILLAGER_NO"
+  volume: 1.0
+  pitch: 1.0
+
+notify:
+  permission: "zmsg.filter.notify"
+
+blocked-words:
+  - "Hurensohn"
+  - "Scheisse"
+  - "Scheiße"
+  - "Fotze"
+  - "Fick"
+  - "nigger"
+  - "Bastadt"
+
+blocked-phrases:
+  - "anderer satz"

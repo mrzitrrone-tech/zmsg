@@ -1,0 +1,42 @@
+broadcast:
+  prefix: "&#ff0000Brodcast &7▶&f "
+  bc:
+    title-prefix: ""
+    title: "&x&F&F&0&0&0&0! ᴡɪᴄʜᴛɪɢ !"
+    subtitle-prefix: "&f"
+    timings:
+      fade-in: 10
+      stay: 60
+      fade-out: 10
+    sound:
+      enabled: true
+      chat-enabled: true
+      title-enabled: true
+      type: "block.note_block.bit"
+      volume: 1.0
+      pitch: 1.0
+  messages:
+    no-permission: "&cYou do not have permission to use this command."
+    usage: "&cUsage: /broadcast <chat|title|both|reload> [fadeIn stay fadeOut] <message>"
+    bc-usage: "&cUsage: /bc <chat|title|both|reload> [fadeIn stay fadeOut] <message>"
+    config-reloaded: "&aConfiguration reloaded!"
+    live-usage: "&cUsage: /live <link> <message>"
+    invalid-link: "&cError: Invalid link! Please check the URL."
+  live:
+    # Title Settings
+    title:
+      enabled: true
+      title: "&x&F&F&0&0&0&0! ᴡɪᴄʜᴛɪɢ !"
+      subtitle: "&7sᴛʀᴇᴀᴍ ʟɪɴᴋ sᴛᴇʜᴛ ɪᴍ ᴄʜᴀᴛ"
+
+    # Chat Message (Platzhalter: %message%, %link%)
+    default-message:
+      - "&#bb76ff&l⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯"
+      - ""
+      - "  %message% %link%"
+      - ""
+      - "&#bb76ff&l⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯"
+
+    # Link Display Format
+    link-format: "&#00d4ff&n%link%"  # Wie der Link angezeigt wird
+    link-hover: "&7Klicke um den Stream zu öffnen"  # Hover-Text

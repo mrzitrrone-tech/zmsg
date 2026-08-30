@@ -1,0 +1,103 @@
+name: WardenChat
+version: '1.5.1'
+main: de.zmsg
+api-version: '1.21'
+authors: [ ᴍʀᴢɪᴛʀʀᴏɴᴇ ]
+description: Advanced chat system with colors, filters and broadcasts
+softdepend: [ PlaceholderAPI ]
+
+commands:
+  msg:
+    description: Private message
+    usage: /msg <player> <message>
+  w:
+    description: Whisper
+    usage: /w <player> <message>
+  zmsg:
+    description: Reload config
+    usage: /zmsg reload
+  msgalerts:
+    description: Toggle message spy
+    usage: /msgalerts
+  chattoggle:
+    description: Toggle chat visibility
+    usage: /chattoggle
+  msgtoggle:
+    description: Toggle private messages
+    usage: /msgtoggle
+    aliases: [ msgtoggel ]
+  zbrodcast:
+    description: Simple broadcast
+    usage: /zbrodcast <message>
+    aliases: [ zbroadcast ]
+  staffchat:
+    description: Toggle staff chat
+    usage: /staffchat
+    aliases: [ sc ]
+  rules:
+    description: Show server rules
+    usage: /rules <chat|server|voice>
+  bc:
+    description: Advanced broadcast
+    usage: /bc <chat|title|both|reload> [fadeIn stay fadeOut] <message>
+    aliases: [ broadcast, announcement ]
+  live:
+    description: Live stream announcement
+    usage: /live <link> <message>
+  chatcolor:
+    description: Set your chat color
+    usage: /chatcolor [color] or /chatcolor [start] [end]
+  chatclear:
+    description: Clear the chat
+    usage: /chatclear
+    aliases: [ cc, clearchat ]
+  chatstop:
+    description: Stop/pause chat
+    usage: /chatstop [time]
+    aliases: [ freezechat, mutechat ]
+
+permissions:
+  zmsg.msg:
+    default: true
+  zmsg.msg.bypass:
+    default: op
+  zmsg.reload:
+    default: op
+  zmsg.msgalerts:
+    default: op
+  zmsg.chat.color:
+    default: op
+  zmsg.cooldown.bypass:
+    default: op
+  zmsg.repeat.bypass:
+    default: op
+  zmsg.chat.toggle:
+    default: true
+  zmsg.msg.toggle:
+    default: true
+  zmsg.broadcast:
+    default: op
+  zmsg.filter.notify:
+    default: op
+  zmsg.security.bypass:
+    default: op
+  zmsg.staffchat:
+    default: op
+  zmsg.rules:
+    default: true
+  zmsg.chatcolor.use:
+    default: true
+  zmsg.chatcolor.classic:
+    default: true
+  zmsg.chatcolor.hex:
+    default: op
+  zmsg.chatcolor.gradient:
+    default: op
+  zmsg.chatclear:
+    default: op
+  zmsg.chatstop:
+    default: op
+  zmsg.chatstop.bypass:
+    default: op
+  zmsg.chat.spacing:
+    default: false
